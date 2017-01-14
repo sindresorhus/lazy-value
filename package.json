@@ -1,0 +1,42 @@
+{
+  "name": "lazy-value",
+  "version": "0.0.0",
+  "description": "Create a lazily evaluated value",
+  "license": "MIT",
+  "repository": "sindresorhus/lazy-value",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "lazy",
+    "value",
+    "lazily",
+    "laziness",
+    "val",
+    "evaluation",
+    "eval",
+    "execute",
+    "getter",
+    "function",
+    "fn",
+    "memoize",
+    "cache",
+    "defer",
+    "deferred"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}

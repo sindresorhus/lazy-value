@@ -1,0 +1,48 @@
+# lazy-value [![Build Status](https://travis-ci.org/sindresorhus/lazy-value.svg?branch=master)](https://travis-ci.org/sindresorhus/lazy-value)
+
+> Create a [lazily evaluated](https://en.wikipedia.org/wiki/Lazy_evaluation) value
+
+Useful when a value is expensive to generate, so you want to delay the computation until the value is needed. For example, improving startup performance by deferring nonessential operations.
+
+
+## Install
+
+```
+$ npm install --save lazy-value
+```
+
+
+## Usage
+
+```js
+const lazyValue = require('lazy-value');
+
+const val = lazyValue(() => expensiveComputation());
+
+app.on('user-action', () => {
+	doSomething(val());
+});
+```
+
+
+## API
+
+### lazyValue(fn)
+
+#### fn
+
+Type: `Function`
+
+Expected to return a value.
+
+
+## Related
+
+- [define-lazy-prop](https://github.com/sindresorhus/define-lazy-prop) - Define a lazily evaluated property on an object
+- [lazy-req](https://github.com/sindresorhus/lazy-req) - Require modules lazily
+- [p-lazy](https://github.com/sindresorhus/p-lazy) - Create a lazy promise
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
