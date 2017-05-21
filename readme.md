@@ -39,7 +39,7 @@ Expected to return a value.
 ## Related
 
 - [define-lazy-prop](https://github.com/sindresorhus/define-lazy-prop) - Define a lazily evaluated property on an object
-- [lazy-req](https://github.com/sindresorhus/lazy-req) - Require modules lazily
+- [import-lazy](https://github.com/sindresorhus/import-lazy) - Import a module lazily
 - [p-lazy](https://github.com/sindresorhus/p-lazy) - Create a lazy promise
 
 
