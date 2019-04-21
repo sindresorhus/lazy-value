@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = fn => {
 	let called = false;
 	let result;

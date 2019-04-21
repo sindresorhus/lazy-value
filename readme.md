@@ -17,10 +17,10 @@ $ npm install lazy-value
 ```js
 const lazyValue = require('lazy-value');
 
-const val = lazyValue(() => expensiveComputation());
+const value = lazyValue(() => expensiveComputation());
 
 app.on('user-action', () => {
-	doSomething(val());
+	doSomething(value());
 });
 ```
 
