@@ -8,7 +8,7 @@ Useful when a value is expensive to generate, so you want to delay the computati
 ## Install
 
 ```
-$ npm install --save lazy-value
+$ npm install lazy-value
 ```
 
 

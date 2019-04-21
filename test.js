@@ -1,9 +1,9 @@
 import test from 'ava';
-import m from './';
+import lazyValue from '.';
 
 test('main', t => {
 	let i = 0;
-	const val = m(() => ++i);
+	const val = lazyValue(() => ++i);
 	t.is(val(), 1);
 	t.is(val(), 1);
 	t.is(val(), 1);
@@ -12,7 +12,7 @@ test('main', t => {
 test('works with `null`', t => {
 	let i = 0;
 
-	const val = m(() => {
+	const val = lazyValue(() => {
 		i++;
 		return null;
 	});

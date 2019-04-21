@@ -1,14 +1,14 @@
 'use strict';
 module.exports = fn => {
 	let called = false;
-	let ret;
+	let result;
 
 	return () => {
 		if (!called) {
 			called = true;
-			ret = fn();
+			result = fn();
 		}
 
-		return ret;
+		return result;
 	};
 };
