@@ -1,4 +1,4 @@
-# lazy-value [![Build Status](https://travis-ci.org/sindresorhus/lazy-value.svg?branch=master)](https://travis-ci.org/sindresorhus/lazy-value)
+# lazy-value
 
 > Create a [lazily evaluated](https://en.wikipedia.org/wiki/Lazy_evaluation) value
 
