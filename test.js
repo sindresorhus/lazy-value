@@ -1,23 +1,23 @@
 import test from 'ava';
-import lazyValue from '.';
+import lazyValue from './index.js';
 
 test('main', t => {
-	let i = 0;
-	const val = lazyValue(() => ++i);
-	t.is(val(), 1);
-	t.is(val(), 1);
-	t.is(val(), 1);
+	let index = 0;
+	const value = lazyValue(() => ++index);
+	t.is(value(), 1);
+	t.is(value(), 1);
+	t.is(value(), 1);
 });
 
 test('works with `null`', t => {
-	let i = 0;
+	let index = 0;
 
-	const val = lazyValue(() => {
-		i++;
+	const value = lazyValue(() => {
+		index++;
 		return null;
 	});
 
-	t.is(val(), null);
-	t.is(val(), null);
-	t.is(i, 1);
+	t.is(value(), null);
+	t.is(value(), null);
+	t.is(index, 1);
 });

@@ -1,15 +1,13 @@
-'use strict';
-
-module.exports = fn => {
-	let called = false;
+export default function lazyValue(function_) {
+	let isCalled = false;
 	let result;
 
 	return () => {
-		if (!called) {
-			called = true;
-			result = fn();
+		if (!isCalled) {
+			isCalled = true;
+			result = function_();
 		}
 
 		return result;
 	};
-};
+}

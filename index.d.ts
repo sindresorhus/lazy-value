@@ -5,7 +5,7 @@ Create a [lazily evaluated](https://en.wikipedia.org/wiki/Lazy_evaluation) value
 
 @example
 ```
-import lazyValue = require('lazy-value');
+import lazyValue from 'lazy-value';
 
 const value = lazyValue(() => expensiveComputation());
 
@@ -14,6 +14,4 @@ app.on('user-action', () => {
 });
 ```
 */
-declare function lazyValue<T extends () => unknown>(fn: T): T;
-
-export = lazyValue;
+export default function lazyValue<T extends () => unknown>(function_: T): T;

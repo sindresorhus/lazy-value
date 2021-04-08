@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import lazyValue = require('.');
+import lazyValue from './index.js';
 
 function expensiveComputation() {
 	return 'foo';
